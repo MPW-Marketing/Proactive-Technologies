@@ -1,0 +1,11 @@
+#summary
+  #close
+    = link_to_function "Back", "show_slides()"
+  #logo
+    = image_tag(@company.logo.url(:medium))
+  #info
+    %h1= "Company Title"
+    #link
+      %strong= "Company Homepage: "
+      %a{:href => "http://#{@company.weblink}"}= @company.weblink
+    = @company.page_text

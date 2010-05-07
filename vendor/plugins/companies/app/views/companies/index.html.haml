@@ -1,0 +1,15 @@
+#summary
+
+#wrapper
+  #slideshow
+    %ul#slides
+      - @companies.each do |company|
+        = render 'slide', :company => company
+  #tip
+    Hover to read about each of our companies
+
+#footer
+  %hr
+  &copy Copyright 2010 Proactive Technology
+  %br
+  %br

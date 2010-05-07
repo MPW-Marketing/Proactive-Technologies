@@ -1,0 +1,25 @@
+<%= error_messages_for :company -%>
+<% form_for [:admin, @company], :html => {:multipart => true} do |f| -%>
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :weblink -%>
+    <%= f.text_field :weblink -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :logo -%>
+    <%= f.file_field :logo -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :page_text -%>
+    <%= f.text_area :page_text, :rows => 20, :cols => 140, :class => 'wymeditor' -%>
+  </div>
+    
+  <%= render :partial => "/shared/admin/form_actions", :locals => {:f => f, :continue_editing => false} %>
+<% end -%>

@@ -1,0 +1,19 @@
+!!! XML
+!!!
+%html
+  %head
+    %title= "Proactive Technologies"
+    = stylesheet_link_tag "style", "formatting"
+    = javascript_include_tag "jquery.min.js", "jquery.scrollTo-min.js", "jquery.serialScroll-min.js", "application.js"
+  %body
+    %center
+      #content
+        #header
+          = render :partial => "shared/menu"
+        %object{:width => "900", :height => "226"}
+          %param{:name => "proactive", :value => "/flash-header.swf"}
+          %embed{:src => "/flash-header.swf", :width => "900", :height => "226"}
+        #flash_footer
+          #tagline
+            Designing, producing and distributing eco-friendly, energy-efficient building products.
+        = yield

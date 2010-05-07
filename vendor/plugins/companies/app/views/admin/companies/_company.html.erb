@@ -1,0 +1,17 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(company) -%>">
+  <span class='title'>
+    <%=h company.name %>
+    <span class="preview">&nbsp;</span>
+
+    <span class='actions'>
+      <%= link_to refinery_icon_tag("application_go.png"), company_url(company),
+          :title => 'View this company<br/><em>Opens in a new window</em>',
+          :target => "_blank" %>
+      <%= link_to refinery_icon_tag("application_edit.png"), edit_admin_company_path(company),
+           :title => 'Edit this company' %>
+      <%= link_to refinery_icon_tag("delete.png"), admin_company_path(company),
+          :class => "cancel confirm-delete",
+          :title => 'Remove this company forever' %>
+    </span>
+  </span>
+</li>

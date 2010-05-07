@@ -1,0 +1,20 @@
+login: &login
+  adapter: mysql
+  host: localhost
+  username: root
+  password: 
+
+development:
+  database: proactive_technologies_development
+  <<: *login
+
+test:
+  database: proactive_technologies_test
+  <<: *login
+
+production:
+  database: proactive_technologies_production
+  adapter: mysql
+  host: localhost
+  username: proactive_technologies_production_login
+  password: proactive_technologies_production_password

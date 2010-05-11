@@ -1,6 +1,7 @@
 #summary
-  #close
-    = link_to_function "Back", "show_slides()"
+  %a{:href => "#", :onclick => "show_slides()"}
+    #close
+
   #logo
     = image_tag(@company.logo.url(:medium))
   #info

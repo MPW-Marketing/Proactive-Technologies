@@ -5,10 +5,10 @@
 
 class ApplicationController < Refinery::ApplicationController
    layout proc{ |c| 
-      if c.request.path_parameters[:controller] == 'inquiries' || c.request.path_parameters[:controller] == 'pages'  
-        "page" 
+      if (c.request.path_parameters[:controller] == 'inquiries') || (c.request.path_parameters[:controller] == 'pages')  
+        return "page" 
       else 
-        "application" 
+        return "application" 
       end
     }
 end

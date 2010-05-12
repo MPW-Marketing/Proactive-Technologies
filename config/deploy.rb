@@ -33,3 +33,21 @@ namespace :deploy do
     run "touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
+
+desc "Link /public/system to a directory shared by each release"
+task :move_system, :roles => :app do
+  run "rm #{latest_release}/public/system"
+  run "ln -s #{deploy_to}/shared/system #{latest_release}/public/system"
+  run "ln -s #{deploy_to}/shared/css/extra.css #{latest_release}/public/stylesheets/extra.css"
+end
+
+desc "Make tmp and log dir"
+task :make_tmp_dirs, :roles => :app do
+  run "rm -Rf #{latest_release}/tmp"
+  run "rm -Rf #{latest_release}/log"
+  run "mkdir #{latest_release}/tmp"
+  run "mkdir #{latest_release}/log"
+end
+
+before "deploy:restart", :make_tmp_dirs
+before "deploy:restart", :move_system

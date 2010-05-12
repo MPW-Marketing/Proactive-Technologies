@@ -1,5 +1,4 @@
 class CompaniesController < Refinery::ApplicationController
-  layout 'application'
   def index
     @companies = Company.all.paginate
     @meta = Page.find_by_title('Companies')

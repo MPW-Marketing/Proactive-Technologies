@@ -1,5 +1,5 @@
 ssh_options[:forward_agent] = true
-set :application, "Proactive Homepage"
+set :application, "proactive_technology"
 set :repository,  "git@github.com:M4N14C/Proactive-Technologies.git"
 
 set :scm, :git
@@ -12,11 +12,14 @@ set :branch, "master"
 set :user, "craigmpw"
 set :password, "tpqf58a1"
 
+set :db_user, "proactivedb"
+set :db_password, "pr0activedb1"
+
 set :deploy_to, "/home/craigmpw/apps/#{application}"
 
 role :web, "proactive.mpwstaging.com"                          # Your HTTP server, Apache/etc
 role :app, "proactive.mpwstaging.com"                          # This may be the same as your `Web` server
-role :db,  "mysql.mpwstaging.com", :primary => true # This is where Rails migrations will run
+role :db,  "proactive.mpwstaging.com", :primary => true # This is where Rails migrations will run
 
 
 # If you are using Passenger mod_rails uncomment this:
@@ -27,6 +30,6 @@ namespace :deploy do
   task :start do ; end
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+    run "touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end

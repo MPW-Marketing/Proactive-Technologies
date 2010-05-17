@@ -118,6 +118,10 @@ li.company img{
 	clear:both;
 }
 
+iframe #content{
+	width:600px;
+}
+
 #summary #link{
 	margin-bottom:30px;
 }
@@ -148,27 +152,3 @@ li.company img{
 	margin-right:20px;
 }
 
-.inquiries form label {
-  width: 150px;
-  float: left;
-}
-.inquiries form input {
-
-}
-.inquiries form input, .inquiries form textarea {
-
-}
-.inquiries form textarea {
-
-}
-.inquiries form .actions {
-  margin-left: 150px;
-}
-.inquiries form .actions input {
-}
-.inquiries .field {
-  margin: 12px 0px;
-}
-.inquiries form {
-  padding-top: 12px;
-}

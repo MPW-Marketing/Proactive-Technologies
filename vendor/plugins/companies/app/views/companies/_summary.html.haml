@@ -1,12 +1,12 @@
 #summary
-  %a{:href => "#", :onclick => "show_slides()"}
-    #close
-  
   #logo
     = image_tag(@company.logo.url(:medium))
   #info
+    %a{:href => "#", :onclick => "show_slides()"}
+      #close
     %h1= @company.name
     #link
-      %strong= "Homepage: "
+      %strong= "Visit Site: "
       %a{:href => "http://#{@company.weblink}"}= @company.weblink
     = @company.page_text
+  #clear

@@ -97,7 +97,7 @@ li.company img{
 }
 
 #info{
-	width:60%;
+	width:50%;
 	float:right;
 	position:relative;
 	top:-216px;
@@ -110,7 +110,7 @@ li.company img{
 #summary #logo{
 	float:left;
 	margin-right: 10px;
-	width:40%;
+	width:50%;
 
 }
 

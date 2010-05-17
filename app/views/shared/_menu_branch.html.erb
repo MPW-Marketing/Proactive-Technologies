@@ -7,7 +7,7 @@
 -%>
 <% if menu_branch.in_menu? %>
   <li<%= " class='#{css.join(' ')}'" if css.present? -%><%= " id='#{domid}'" if domid.present? -%>>
-    <%= link_to menu_branch.title, menu_branch.url, :rel => "shadowbox;width=910;height=420;" %>
+    <%= link_to menu_branch.title, menu_branch.url, :rel => "shadowbox;width=610;height=500;" %>
     <%
       unless hide_children or
         menu_branch.parent_id.present? or

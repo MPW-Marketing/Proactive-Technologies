@@ -1,0 +1,59 @@
+body{
+	background-color:#FFFFFF;
+	font-family: arial;
+	font-size:13px;
+}
+
+#content{
+	width:600px;
+	background-color:#FFF;
+	text-align:left;
+}
+
+#body_content_right {
+  float: right;
+  width: 49%;
+}
+
+#body_content_left {
+  width: 100%;
+}
+
+#form{
+	text-align:left;
+	width:600px;
+}
+
+.inquiries form label {
+  width: 150px;
+  float: left;
+}
+.inquiries form input {
+
+}
+.inquiries form input, .inquiries form textarea {
+
+}
+.inquiries form textarea {
+
+}
+.inquiries form .actions {
+  margin-left: 150px;
+}
+.inquiries form .actions input {
+}
+.inquiries .field {
+  margin: 12px 0px;
+}
+.inquiries form {
+  padding-top: 12px;
+}
+
+a{
+	color:#555;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#999;
+}

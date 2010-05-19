@@ -16,16 +16,15 @@
       Shadowbox.init();
 
   %body
-    %center
-      #content
-        #header
-          = render :partial => "shared/menu"
-        %object{:width => "900", :height => "226"}
-          %param{:name => "proactive", :value => "/flash-header.swf"}
-          %embed{:src => "/flash-header.swf", :width => "900", :height => "226"}
-        #flash_footer
-          #tagline
-            Designing, producing and distributing eco-friendly, energy-efficient building products.
-        = yield
+    #content
+      #header
+        = render :partial => "shared/menu"
+      %object{:width => "900", :height => "226"}
+        %param{:name => "proactive", :value => "/flash-header.swf"}
+        %embed{:src => "/flash-header.swf", :width => "900", :height => "226"}
+      #flash_footer
+        #tagline
+          Designing, producing and distributing eco-friendly, energy-efficient building products.
+      = yield
 
   

@@ -101,6 +101,7 @@ li.company img{
 	float:right;
 	position:relative;
 	top:-216px;
+	margin-right:10px;
 }
 
 #summary{
@@ -129,6 +130,8 @@ iframe #content{
 #close{
 	float:right;
 	width:66px;
+	margin-top:10px;
+	margin-right:10px;
 	height:18px;
 	background: url('../images/backbutton2.gif');
 }

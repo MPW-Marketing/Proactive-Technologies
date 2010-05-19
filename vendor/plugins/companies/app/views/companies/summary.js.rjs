@@ -1,5 +1,6 @@
 page.replace 'summary', :partial => 'summary', :object => @company
 page['summary'].hide
-page['wrapper'].hide "fade", nil, 1500,  nil
-page['slideshow'].trigger "stop"
-page['summary'].show "fade", nil, 1500, nil
+page['summary'].slide_down(1200)
+page.delay(0.8) do
+  page['wrapper'].slide_up(1200)
+end

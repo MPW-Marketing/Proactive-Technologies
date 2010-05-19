@@ -6,7 +6,7 @@ body{
 
 #content{
 	width:900px;
-	background-color:#FFF;
+	background-color:#FFFFFF; 
 	text-align:left;
 	border: groove 1px grey;
 }
@@ -99,9 +99,8 @@ li.company img{
 #info{
 	width:50%;
 	float:right;
-	position:relative;
-	top:-216px;
 	margin-right:10px;
+	min-height:300px;
 }
 
 #summary{
@@ -111,7 +110,7 @@ li.company img{
 #summary #logo{
 	float:left;
 	margin-right: 10px;
-	width:50%;
+	width:47%;
 
 }
 
@@ -141,7 +140,7 @@ iframe #content{
 #tip{ position:relative; bottom:70px; text-align:center; font-size:11px; color:#a7a7a7; font-weight:bold;}
 
 #footer{
-	text-align:center; font-size:11px; color:#a7a7a7; clear:right; 
+	text-align:center; font-size:11px; color:#a7a7a7; clear:right; margin-top:10px;
 }
 #body_content{ padding-left:20px;}
 

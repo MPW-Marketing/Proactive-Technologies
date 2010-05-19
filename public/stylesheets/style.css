@@ -56,8 +56,10 @@ body{
 	text-align:left;
 	width:500px;
 }
-
+#wrapper{	overflow-x:hidden; }
 #slideshow{
+	position:relative;
+	top:80px;
 	height:284px;	
 	width: 900px;
 	overflow-x:hidden;
@@ -73,8 +75,7 @@ a:hover{
 }
 
 #slideshow ul{
-	position:relative;
-	top:80px;
+
 	height:110px;
 	border-top:1px solid #A4A4A4;
 	border-bottom:1px solid #A4A4A4;
@@ -82,10 +83,13 @@ a:hover{
 	list-style:none;
 
 }
-
+#slideshow li{
+	border-top:1px solid #A4A4A4;
+/*	border-bottom:1px solid #A4A4A4;*/
+}
 .company{
 	float:left;
-	margin-right:5px;
+/*	margin-right:5px;*/
 	cursor:pointer;
 }
 li.company a{

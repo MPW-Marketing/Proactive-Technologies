@@ -1,2 +1,2 @@
 - content_tag_for(:li, company, :id => index) do
-  = link_to_remote image_tag(company.logo.url(:slide)), :url => { :controller => :companies, :action => "summary", :id => company.id }
+  = link_to_remote image_tag(company.logo.url(:slide), :width => 204, :height => 110), :url => { :controller => :companies, :action => "summary", :id => company.id }

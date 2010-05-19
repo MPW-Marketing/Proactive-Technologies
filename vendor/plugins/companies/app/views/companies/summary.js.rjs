@@ -1,5 +1,5 @@
 page.replace 'summary', :partial => 'summary', :object => @company
 page['summary'].hide
-page['wrapper'].hide "bounce", nil, 2000,  nil
+page['wrapper'].hide "fade", nil, 1500,  nil
 page['slideshow'].trigger "stop"
-page['summary'].show "bounce", nil, 4000, nil
+page['summary'].show "fade", nil, 1500, nil

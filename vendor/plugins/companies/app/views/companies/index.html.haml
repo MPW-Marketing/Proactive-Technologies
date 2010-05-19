@@ -5,6 +5,7 @@
     %ul#slides
       - @companies.each_with_index do |company, index|
         = render 'slide', :company => company, :index => index
+      
   #tip
     Click to read about each of our companies
 

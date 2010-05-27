@@ -1,13 +1,13 @@
 body{
-	background-color:#FFFFFF;
+	background: #CBCBCB url('../images/bg_gradient.png') repeat-x 0 0 ;
 	font-family: arial;
 	font-size:13px;
 }
 
 #content{
 	width:600px;
-	background-color:#FFF;
 	text-align:left;
+	margin-left:20px;
 }
 
 #body_content_right {

@@ -1,6 +1,6 @@
 page.replace 'summary', :partial => 'summary', :object => @company
 page['summary'].hide
-page['summary'].slide_down(1200)
-page.delay(0.8) do
-  page['wrapper'].slide_up(1200)
+page['summary'].slide_down(1000)
+page.delay(0.5) do
+  page['wrapper'].slide_up(1000)
 end

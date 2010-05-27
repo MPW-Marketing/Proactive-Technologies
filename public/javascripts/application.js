@@ -8,8 +8,8 @@ function show_slides(){
 $(document).ready(function(){
 	$('#slideshow').bxCarousel({
 		display_num: 5,
-		auto_interval: 2000,
-		speed: 1000,
+		auto_interval: 1,
+		speed: 4000,
 		move: 1,
 		auto: true,
 		controls: false,

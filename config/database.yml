@@ -15,6 +15,6 @@ test:
 production:
   database: proactive_technologies_production
   adapter: mysql
-  host: mysql.mpwstaging.com
-  username: proactivedb
-  password: pr0activedb1
+  host: 
+  username: 
+  password: 

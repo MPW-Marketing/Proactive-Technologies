@@ -1,6 +1,8 @@
 ssh_options[:forward_agent] = true
+
+
 set :application, "proactive_technology"
-set :repository,  "git@github.com:M4N14C/Proactive-Technologies.git"
+set :repository,  "git@github.com:damonmaldonado/Proactive-Technologies.git"
 
 set :scm, :git
 #Old Git Version on App Server
@@ -9,17 +11,17 @@ set :scm_verbose, true
 # set :git_enable_submodules, 1
 set :branch, "master"
 
-set :user, "craigmpw"
-set :password, "tpqf58a1"
+set :user, "deploy"
+set :password, "mpwacc3ss"
 
 set :db_user, "proactivedb"
 set :db_password, "pr0activedb1"
 
-set :deploy_to, "/home/craigmpw/apps/#{application}"
+set :deploy_to, "~/apps/#{application}"
 
-role :web, "proactive.mpwstaging.com"                          # Your HTTP server, Apache/etc
-role :app, "proactive.mpwstaging.com"                          # This may be the same as your `Web` server
-role :db,  "proactive.mpwstaging.com", :primary => true # This is where Rails migrations will run
+role :web, "184.106.134.155"                          # Your HTTP server, Apache/etc
+role :app, "184.106.134.155"                          # This may be the same as your `Web` server
+role :db,  "184.106.134.155", :primary => true # This is where Rails migrations will run
 
 
 # If you are using Passenger mod_rails uncomment this:

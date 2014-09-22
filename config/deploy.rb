@@ -3,6 +3,8 @@ ssh_options[:forward_agent] = true
 
 set :application, "proactive_technology"
 set :repository,  "git@github.com:damonmaldonado/Proactive-Technologies.git"
+set :rvm_ruby_string, '1.8.7'
+
 
 set :scm, :git
 #Old Git Version on App Server

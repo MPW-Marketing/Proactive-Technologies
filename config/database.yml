@@ -1,8 +1,8 @@
 login: &login
-  adapter: mysql
+  adapter: mysql2
   host: localhost
   username: root
-  password: 
+  password: mpwacc3ss
 
 development:
   database: proactive_technologies_development
@@ -14,7 +14,7 @@ test:
 
 production:
   database: proactive_technologies_production
-  adapter: mysql
-  host: 
-  username: 
-  password: 
+  adapter: mysql2
+  host: localhost
+  username: root
+  password: mpwacc3ss

@@ -1,0 +1,41 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionmailer (2.3.5)
+      actionpack (= 2.3.5)
+    actionpack (2.3.5)
+      activesupport (= 2.3.5)
+      rack (~> 1.0.0)
+    activerecord (2.3.5)
+      activesupport (= 2.3.5)
+    activeresource (2.3.5)
+      activesupport (= 2.3.5)
+    activesupport (2.3.5)
+    formtastic (0.9.10)
+      actionpack (>= 2.3.0)
+      activesupport (>= 2.3.0)
+    haml (2.2.24)
+    hpricot (0.8.2)
+    paperclip (2.3.1.1)
+    rack (1.0.1)
+    rails (2.3.5)
+      actionmailer (= 2.3.5)
+      actionpack (= 2.3.5)
+      activerecord (= 2.3.5)
+      activeresource (= 2.3.5)
+      activesupport (= 2.3.5)
+      rake (>= 0.8.3)
+    rake (10.3.2)
+    refinerycms (0.9.6.33)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport (= 2.3.5)
+  formtastic (~> 0.9.7)
+  haml (~> 2.2.22)
+  hpricot (= 0.8.2)
+  paperclip (~> 2.3.1.1)
+  rails (= 2.3.5)
+  refinerycms (= 0.9.6.33)

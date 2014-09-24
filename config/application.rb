@@ -25,9 +25,9 @@ Refinery::Initializer.run do |config|
   }
 
   # Specify your application's gem requirements here. See the examples below:
-  config.gem "haml"
-  config.gem 'formtastic', :lib => 'formtastic', :source => 'http://gemcutter.org/', :version => '0.9.7'
-  config.gem 'paperclip', :lib => 'paperclip', :source => 'http://gems.github.com'
+  #config.gem "haml"
+  #config.gem 'formtastic', :lib => 'formtastic', :source => 'http://gemcutter.org/', :version => '0.9.7'
+  #config.gem 'paperclip', :lib => 'paperclip', :source => 'http://gems.github.com'
   # config.gem "refinerycms-portfolio", :lib => "portfolio", :version => "~> 0.9.3.8"
 end
 
